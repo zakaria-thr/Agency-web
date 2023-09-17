@@ -1,0 +1,41 @@
+/*======= start custom property ==========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Castoro', serif;
+    font-family: 'DM Sans', sans-serif; 
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(var(--pixel) * 1400);
+}
+:root{
+    --pixel : 0.065vw;
+    --main-color : #60E1CB;
+    --secondary : #7BC0E3;
+    --black : #292525;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    width: fit-content;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+/*======= start header ==========*/
