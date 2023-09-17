@@ -10,13 +10,14 @@ body{
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: calc(var(--pixel) * 1400);
+    width: calc(var(--pixel) * 1300);
 }
 :root{
     --pixel : 0.065vw;
     --main-color : #60E1CB;
     --secondary : #7BC0E3;
     --black : #292525;
+    --section-padding : calc(var(--pixel) * 30) 0 ; 
 }
 
 ul{
@@ -80,4 +81,57 @@ button{
     padding: calc(var(--pixel) * 11) calc(var(--pixel) * 27);
     border-radius: calc(var(--pixel) * 50);
     cursor: pointer;
+}
+/*======= start banner ==========*/
+.banner {
+    padding: var(--section-padding);
+}
+.banner .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner .content .text .title{
+    color: var(--main-color);
+    font-size: calc(var(--pixel) * 58);
+    font-style: normal;
+    font-weight: 900;
+    line-height: calc(var(--pixel) * 65);
+    margin-bottom: calc(var(--pixel) * 30);
+}
+.banner .content .text .p{
+    color: #000;
+    font-size: calc(var(--pixel) * 20);
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(var(--pixel) * 31); 
+    margin-bottom: calc(var(--pixel) * 50);
+}
+.banner .content .button{
+    font-size: calc(var(--pixel) * 20);
+    font-style: normal;
+    font-weight: 700;
+    line-height: calc(var(--pixel) * 24); /* 24px */
+    letter-spacing: 0.1px;
+    border-radius: calc(var(--pixel) * 50);
+    border: 1px solid rgba(7, 0, 59, 0.17);
+    padding: calc(var(--pixel) * 14) calc(var(--pixel) * 24);
+    cursor: pointer;
+}
+.banner .content .button.one{
+    color: #fff;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    margin-right: calc(var(--pixel) * 14);
+    border-radius: 1000px;
+    background: var(--Dark, #60E1CB);
+    box-shadow: 0px 46px 52px 0px rgba(96, 225, 203, 0.56);
+}
+.banner .content .button.two{
+    color: var(--main-color);
+    background-color: #fff;
+}
+.banner .content .img{
+    display: block;
+    width: calc(var(--pixel) * 600);
 }
